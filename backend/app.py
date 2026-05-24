@@ -4,7 +4,7 @@ import numpy as np
 from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 # Load trained model
 model = pickle.load(open('model/model.pkl', 'rb'))
 
